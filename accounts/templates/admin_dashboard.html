@@ -1,0 +1,10 @@
+<!-- clinic/templates/clinic/admin_dashboard.html -->
+<h2>Admin Dashboard</h2>
+<ul>
+    <li><a href="{% url 'add_room' %}">Add Room</a></li>
+    <li><a href="{% url 'view_rooms' %}">View Rooms</a></li>
+    <li><a href="{% url 'add_staff' %}">Add Staff</a></li>
+    <li><a href="{% url 'view_staff' %}">View Staff</a></li>
+    <li><a href="{% url 'view_reservations' %}">View Reservations</a></li>
+    <li><a href="{% url 'change_reservation' reservation_id=1 %}">Edit Reservation</a></li> <!-- Ustawienie konkretnego ID -->
+</ul>

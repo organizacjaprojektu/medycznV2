@@ -1,0 +1,19 @@
+<!-- clinic/templates/clinic/change_reservation.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Reservation</title>
+</head>
+<body>
+    <h1>Edit Reservation</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save Changes</button>
+    </form>
+
+    <a href="{% url 'view_reservations' %}">Back to Reservations</a> <!-- Link do powrotu do listy rezerwacji -->
+</body>
+</html>

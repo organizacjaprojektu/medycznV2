@@ -1,0 +1,7 @@
+<!-- clinic/templates/clinic/view_staff.html -->
+<h2>Staff</h2>
+<ul>
+    {% for staff in staff %}
+        <li>{{ staff.name }} - {{ staff.role }}</li>
+    {% endfor %}
+</ul>

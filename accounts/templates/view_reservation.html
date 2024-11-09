@@ -1,0 +1,7 @@
+<!-- clinic/templates/clinic/view_reservations.html -->
+<h2>Reservations</h2>
+<ul>
+    {% for reservation in reservations %}
+        <li>{{ reservation.room.name }} reserved by {{ reservation.doctor.username }} on {{ reservation.date }} at {{ reservation.time }}</li>
+    {% endfor %}
+</ul>
